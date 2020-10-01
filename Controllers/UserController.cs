@@ -15,12 +15,12 @@ namespace XssVulnerableSite.Controllers
         {
             return View();
         }
-        public IActionResult UserHtmlInput()
+        public IActionResult HtmlInput()
         {
             return View();
         }
 
-        public IActionResult UserJsInput()
+        public IActionResult JsInput()
         {
             return View();
         }
