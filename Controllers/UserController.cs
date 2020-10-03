@@ -15,14 +15,50 @@ namespace XssVulnerableSite.Controllers
         {
             return View();
         }
+
+        [HttpGet]
         public IActionResult HtmlInput()
         {
-            return View();
+            HtmlInput model = new HtmlInput
+            {
+                Name = null
+            };
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult HtmlInput(HtmlInput model)
+        {
+            return View(model);
         }
 
+        [HttpGet]
         public IActionResult JsInput()
         {
-            return View();
+            JsInput model = new JsInput
+            {
+                FavoriteColor = null
+            };
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult JsInput(JsInput model)
+        {
+            return View(model);
+        }
+
+        [HttpGet]
+        public IActionResult CommentInput()
+        {
+            CommentInput model = new CommentInput
+            {
+                FavoriteFood = null
+            };
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult CommentInput(CommentInput model)
+        {
+            return View(model);
         }
     }
 }

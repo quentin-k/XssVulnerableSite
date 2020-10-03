@@ -4,5 +4,16 @@
 
 <div class="text-center">
     <h1 class="display-4">Hello!</h1>
-    <p>This page exists!</p>
+    <p>What page would you like to visit</p>
+    <ul class="navbar-nav flex-grow-1">
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="HtmlInput">Name</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="JsInput">Color</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="CommentInput">Food</a>
+        </li>
+    </ul>
 </div>
