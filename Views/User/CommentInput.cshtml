@@ -11,7 +11,7 @@
     }
     else
     {
-        <!-- The user's favorite food of @Html.Raw(Model.FavoriteFood) is not a good pick!-->
+        <!-- The user's favorite food of @Html.Encode(Model.FavoriteFood) is not a good pick!-->
         <h1>I think that @Html.Encode(Model.FavoriteFood) is pretty good too!</h1>
     }
     <div class="row">

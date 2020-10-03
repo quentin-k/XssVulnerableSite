@@ -19,7 +19,7 @@
                     </form>
                 </div>
                 <script>
-                    var color = "@Html.Raw(Model.FavoriteColor)"
+                    var color = "@Html.Encode(Model.FavoriteColor)"
                     if (color == "" ) {
                         document.getElementById("colorResponse").innerText = "What is your favorite color?";
                     } else {
